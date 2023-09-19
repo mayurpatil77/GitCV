@@ -1,0 +1,109 @@
+/* CSS Resets  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./Assets/bg-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  Georgia, Garamond, "Times New Roman", Times, serif;
+}
+
+.resume {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: auto;
+    border-top: 10px solid #ccc;
+    margin: 50px;
+    
+}
+.resume-content{
+    padding: 5px 20px;
+}
+
+/* Name Section Styled */
+
+.name{
+    width: 100%;
+    padding:30px;
+    border-bottom: 1px solid rgb(38, 35, 35);
+}
+.name p{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 5px 0px;
+}
+.name span{
+    font-size: 20px;
+}
+
+/* Github Section Profile Style  */
+
+.heading{
+    width: 100%;
+    padding:30px;
+    border-bottom: 1px solid #ccc;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#heading-txt{
+   line-height: 30px;
+   font-style: italic;
+   font-size: 15px;
+   width: 25%;
+}
+
+#description{
+    font-size: 18px;
+    line-height: 25px;
+    width: 75%;
+    
+ }
+
+
+#description span a{
+    color:chocolate;
+    text-decoration: none;
+}
+
+
+/* Languages Section  */
+
+#languages{
+    list-style-type: none;
+    line-height: 25px;
+}
+
+/* Repos Section  */
+
+#repo-list{
+    list-style-type: none;
+    line-height: 25px;
+}
+#repo-info{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#repo-info a{
+    color:chocolate;
+    font-size: 25px;
+}
+#repo-stars-forks-info{
+    padding: 20px 0px;
+    border-bottom: 1px solid #ccc;
+}
