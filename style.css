@@ -13,9 +13,10 @@ body {
     height: auto;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family:  Georgia, Garamond, "Times New Roman", Times, serif;
+    font-family: Georgia, Garamond, "Times New Roman", Times, serif;
 }
 
 .resume {
@@ -26,84 +27,103 @@ body {
     height: auto;
     border-top: 10px solid #ccc;
     margin: 50px;
-    
 }
-.resume-content{
+
+.resume-content {
     padding: 5px 20px;
 }
 
 /* Name Section Styled */
 
-.name{
+.name {
     width: 100%;
-    padding:30px;
+    padding: 30px;
     border-bottom: 1px solid rgb(38, 35, 35);
 }
-.name p{
+
+.name p {
     font-size: 30px;
     text-transform: uppercase;
     margin: 5px 0px;
 }
-.name span{
+
+.name span {
     font-size: 20px;
 }
 
 /* Github Section Profile Style  */
 
-.heading{
+.heading {
     width: 100%;
-    padding:30px;
+    padding: 30px;
     border-bottom: 1px solid #ccc;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#heading-txt{
-   line-height: 30px;
-   font-style: italic;
-   font-size: 15px;
-   width: 25%;
+#heading-txt {
+    line-height: 30px;
+    font-style: italic;
+    font-size: 15px;
+    width: 25%;
 }
 
-#description{
+#description {
     font-size: 18px;
     line-height: 25px;
     width: 75%;
-    
- }
+
+}
 
 
-#description span a{
-    color:chocolate;
+#description span a {
+    color: chocolate;
     text-decoration: none;
 }
 
 
 /* Languages Section  */
 
-#languages{
+#languages {
     list-style-type: none;
     line-height: 25px;
 }
 
 /* Repos Section  */
 
-#repo-list{
+#repo-list {
     list-style-type: none;
     line-height: 25px;
 }
-#repo-info{
+
+#repo-info {
     margin: 20px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-#repo-info a{
-    color:chocolate;
+
+#repo-info a {
+    color: chocolate;
     font-size: 25px;
 }
-#repo-stars-forks-info{
+
+#repo-stars-forks-info {
     padding: 20px 0px;
     border-bottom: 1px solid #ccc;
+}
+
+#printResumePDF {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
+    margin: 0 auto;
+}
+
+#printResumePDF:hover {
+    cursor: pointer;
 }

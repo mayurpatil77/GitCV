@@ -9,15 +9,23 @@
 </head>
 
 <body>
+    
+    <!-- Searching User -->
+
+    <div class="searchUser">
+        <input type="text" id="usernameInput" placeholder="Github Username">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Resume Section  -->
 
     <section class="resume">
         <div class="resume-content">
 
-
             <!-- Name Section  -->
 
             <div class="name">
-                <p>Mayur Patil</p>
+                <p id="username">Mayur Patil</p>
                 <span>Advanced Github User</span>
             </div>
 
@@ -29,9 +37,9 @@
                     <h2>Github Profile</h2>
                 </div>
                 <div id="description">
-                    <p>On GitHub since this year, Mayur Patil is a developer based in India with 15 <span><a
-                                href="#">public repositories</a></span>
-                        and <span> <a href="#">1 follower</a> </span></p>
+                    <p>On GitHub since this year, Mayur Patil is a developer based in India with 15 <span id="publicRepo" >
+                        <a id="publicRepoUrl"  href="#"></a>Public Repositories</span>
+                        and <span id="followers"><a id="followersUrl" href="#"></a></span>Follower</p>
                 </div>
             </div>
 
@@ -63,7 +71,7 @@
                         </a>
                         <p>2023</p>
                     </div>
-                    <p>NPM Package For Array Utilites ( Performatio General Operations on Array) </p>
+                    <p>NPM Package For Array Utilites ( Perform General Operations on Array) </p>
                     <p id="repo-stars-forks-info">This repository has 0 stars and 0 forks. If you would like more
                         information about this repository
                         and my contributed code, please visit the repo on GitHub.
@@ -82,15 +90,22 @@
                     <p>This résumé is generated automatically using public information from the developer's GitHub
                         account. The repositories are ordered by popularity based on a very simple popularity heuristic
                         that defines the popularity of a repository by its sum of watchers and forks. Do not hesitate to
-                        visit <span><a href="#">Mayur Patil's GitHub page</a></span> for a complete work history.
+                        visit <span id="userprofilelink"><a href="#">Mayur Patil's GitHub page</a></span> for a complete work history.
                     </p>
                 </div>
             </div>
+
+
+            <button id="printResumePDF">Download PDF</button>
+
         </div>
 
-
     </section>
+ 
+    <!-- Adding Javascript  -->
+
     <script src="app.js"></script>
+
 </body>
 
 </html>
