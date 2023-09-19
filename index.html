@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png" type="image/x-icon">
     <title>GitCV - Create CV From Your Github Profile</title>
 </head>
 
 <body>
-    
+
     <!-- Searching User -->
 
     <div class="searchUser">
         <input type="text" id="usernameInput" placeholder="Github Username">
         <button id="searchBtn">Search</button>
     </div>
+
+
+    <div id="loader" class="loader">
+        Loading...
+    </div>
+    
 
     <!-- Resume Section  -->
 
@@ -25,8 +32,15 @@
             <!-- Name Section  -->
 
             <div class="name">
-                <p id="username">Mayur Patil</p>
-                <span>Advanced Github User</span>
+                <div>
+                    <img id="profile-img" src="" alt="Profile Image">
+                    <p id="location"></p>
+                </div>
+                <div>
+                    <p id="username">Mayur Patil</p>
+                    <span id="bio">loading...</span>
+                </div>
+               
             </div>
 
 
@@ -37,15 +51,19 @@
                     <h2>Github Profile</h2>
                 </div>
                 <div id="description">
-                    <p>On GitHub since this year, Mayur Patil is a developer based in India with 15 <span id="publicRepo" >
-                        <a id="publicRepoUrl"  href="#"></a>Public Repositories</span>
-                        and <span id="followers"><a id="followersUrl" href="#"></a></span>Follower</p>
+                    <p>On GitHub since this year, Mayur Patil is a developer based in India with 
+                        <a id="publicRepoUrl" href="#">
+                            <span id="publicRepo"></span> 
+                        </a> and 
+                        <a id="followersUrl" href="#"> 
+                            <span id="followers"></span>
+                        </a></p>
                 </div>
             </div>
 
             <!-- Languages Section -->
 
-            <div class="heading">
+            <!-- <div class="heading">
                 <div id="heading-txt">
                     <h2>Languages</h2>
                 </div>
@@ -56,7 +74,7 @@
                         <li>Javascript</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Popular repositories Section -->
 
@@ -66,16 +84,8 @@
                 </div>
                 <div id="description">
                     <div id="repo-info">
-                        <a href="#">
-                            <h5>Array Uttils Mayur</h5>
-                        </a>
-                        <p>2023</p>
+                        <ul id="repo-ul"></ul>
                     </div>
-                    <p>NPM Package For Array Utilites ( Perform General Operations on Array) </p>
-                    <p id="repo-stars-forks-info">This repository has 0 stars and 0 forks. If you would like more
-                        information about this repository
-                        and my contributed code, please visit the repo on GitHub.
-                    </p>
                 </div>
             </div>
 
@@ -88,20 +98,17 @@
                 </div>
                 <div id="description">
                     <p>This résumé is generated automatically using public information from the developer's GitHub
-                        account. The repositories are ordered by popularity based on a very simple popularity heuristic
-                        that defines the popularity of a repository by its sum of watchers and forks. Do not hesitate to
-                        visit <span id="userprofilelink"><a href="#">Mayur Patil's GitHub page</a></span> for a complete work history.
+                        account. Do not hesitate to
+                        visit The <a id="userprofilelink" href="#"><span>Github Page</span></a> for a complete
+                        work history.
                     </p>
                 </div>
             </div>
 
-
-            <button id="printResumePDF">Download PDF</button>
-
         </div>
 
     </section>
- 
+
     <!-- Adding Javascript  -->
 
     <script src="app.js"></script>
