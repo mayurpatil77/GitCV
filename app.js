@@ -18,6 +18,8 @@ const bio = document.querySelector("#bio");
 const repoListDiv = document.querySelector('#repo-info');
 const repo_ul = document.querySelector("#repo-ul");
 const userLocation = document.querySelector("#location");
+const git_profile_username = document.querySelector("#git-profile-username")
+const git_profile_location = document.querySelector("#git-profile-location")
 
 
 
@@ -61,6 +63,8 @@ function fetchGitProfile() {
         userprofilelink.href = `${data.html_url}`
         profile_img.src= data.avatar_url ;
         userLocation.innerText = data.location;
+        git_profile_username.innerText = data.name
+        git_profile_location.innerText = data.location;
     })
     .catch((error) => {
         hideLoader();
